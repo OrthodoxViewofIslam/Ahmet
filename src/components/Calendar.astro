@@ -1,17 +1,7 @@
 ---
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
+import CalendarReact from './CalendarReact.jsx';
 
-const today = new Date();
+const { events = [] } = Astro.props;
 ---
 
-<div class="calendar-container">
-  <Calendar value={today} />
-</div>
-
-<style>
-.calendar-container {
-  max-width: 300px;
-  margin: 1rem auto;
-}
-</style>
+<CalendarReact events={events} />
