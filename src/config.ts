@@ -4,7 +4,7 @@ export interface SiteConfig {
   title: string;
   slogan: string;
   description?: string;
-  site: string,
+  site: string;
   social: {
     github?: string;
     linkedin?: string;
@@ -17,21 +17,27 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  site: "https://example.com/", // your site url
-  title: "An Orthodox View Of Islam     ",
-  slogan: "Exploring everything about Islam from the lens of the Orthodox Faith",
-  description: "The purpose of this site is to provide Orthodox Christians the necessary tools to defend their faith, for clergy to better understand this faith and for Muslims to learn why Orthodox Christians accept Jesus as Lord and not Muhammad",
+  site: "https://ahmet-iota.vercel.app/",
+
+  title: "An Orthodox View of Islam",
+  slogan: "Exploring Islam from the lens of the Orthodox Christian Faith",
+
+  description:
+    "This site provides Orthodox Christians with resources to defend their faith, assists clergy in understanding Islam, and invites Muslims to discover why Orthodox Christians follow Jesus Christ rather than Muhammad.",
+
   social: {
-    github: "https://github.com/larry-xue/astro-zen-blog", // leave empty if you don't want to show the github
-    linkedin: "https://www.linkedin.com/in/someone/", // leave empty if you don't want to show the linkedin
-    email: "example@gmail.com", // leave empty if you don't want to show the email
-    rss: true, // set this to false if you don't want to provide an rss feed
+    github: "", // ← remove the demo repo link
+    linkedin: "", // ← remove or replace with your real profile
+    email: "example@gmail.com", // ← update with your actual email
+    rss: true,
   },
+
   homepage: {
-    maxPosts: 3,
-    tags: [],
+    maxPosts: 5, // feel free to show more posts
+    tags: [], // leave empty to show all
     excludeTags: [],
   },
-  googleAnalysis: "", // your google analysis id
-  search: true, // set this to false if you don't want to provide a search feature
+
+  googleAnalysis: "", // add your Google Analytics Measurement ID here if using GA4
+  search: true,
 };
