@@ -20,7 +20,7 @@ export const siteConfig: SiteConfig = {
   site: "https://ahmet-iota.vercel.app/",
 
   title: "An Orthodox View of Islam",
-  slogan: "Exploring Islam from the lens of the Orthodox Christian Faith",
+  slogan: "Exploring Islam from the lens of Orthodox Christianity",
 
   description:
     "This site provides Orthodox Christians with resources to defend their faith, assists clergy in understanding Islam, and invites Muslims to discover why Orthodox Christians follow Jesus Christ rather than Muhammad.",
