@@ -2,7 +2,7 @@
 title: "Saints Peter and Paul"
 description: "A feast of the Apostles; why they matter"
 saintDate: 2025-07-12
-date: 2025-07-12
+date: 2024-07-12
 tags: ["saint", "apostle", "Paul"]
 ---
 
