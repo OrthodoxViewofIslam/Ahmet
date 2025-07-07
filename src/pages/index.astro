@@ -18,15 +18,15 @@ const homePagePosts = filterPosts(posts, {
 })
 
 
-// Build events from posts that have a `saintDate`
-const events = posts
-  .filter(post => post.data.saintDate)
-  .map(post => ({
-    date: post.data.saintDate,
-    url: `/blog/${post.slug}/`,
-    title: post.data.title,
-  }));
 
+
+const events = [
+  {
+    title: "Saint Paul",
+    date: "2025-07-12",
+    url: "/blog/paul"
+  }
+];
 ---
 
 <BaseLayout title={siteConfig.title}>

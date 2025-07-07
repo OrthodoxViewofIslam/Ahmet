@@ -1,7 +1,10 @@
 ---
-import CalendarReact from './CalendarReact.jsx';
+import CalendarReact from '../components/CalendarReact.jsx';
+import ClientOnly from '@astrojs/react/client.js';
 
 const { events = [] } = Astro.props;
 ---
 
-<CalendarReact events={events} />
+<ClientOnly>
+  <CalendarReact />
+</ClientOnly>
